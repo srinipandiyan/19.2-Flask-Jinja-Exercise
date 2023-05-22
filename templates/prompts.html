@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+  <title>Madlib Generator</title>
+</head>
+<body>
+  <h1>Generate yourself a Madlib</h1>
+  <form action="/madlib">
+    {% for item in fill_in_prompts %}
+      <p>{{item}}:
+        <input name="{{item}}">
+      </p>
+    {% endfor %}
+    <button>Submit</button>
+  </form>`
+</body>
+</html>
